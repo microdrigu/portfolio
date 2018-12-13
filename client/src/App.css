@@ -1,34 +1,3 @@
-/* 
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
- */
 
 /* remove padding from fluid containers */
 .container-fluid {
@@ -41,26 +10,6 @@
 #name {
   color: whitesmoke;
 }
-
-/* .fa-1x {
-  font-size: 1.5rem;
-  }
-  .navbar-toggler.toggler-example {
-  cursor: pointer;
-  }
-  .dark-blue-text {
-  color: #0A38F5;
-  }
-  .dark-pink-text {
-  color: #AC003A;
-  }
-  .dark-amber-text {
-  color: #ff6f00;
-  }
-  .dark-teal-text {
-  color: #004d40;
-  }
- */
 
 .body {
   height: 100vh;

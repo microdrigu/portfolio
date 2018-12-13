@@ -11,7 +11,7 @@ const Poop = () => <h4>POOPERS</h4>;
 class App extends Component {
   render() {
     return (
-      <div className="body" 
+      <div className="Body" 
         style = {
           { 
             backgroundImage: 'url(' + Background + ')', 
@@ -22,7 +22,7 @@ class App extends Component {
         }>
       <Router>
         <div className="container-fluid">
-          <nav className="d-flex justify-content-between navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav className="d-flex justify-content-between navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             <div className="navbar-brand">Logo here</div>
             {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>

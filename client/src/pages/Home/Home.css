@@ -1,4 +1,18 @@
-.Home {
-    align-items: center;
-    
+.body {
+    justify-content: center;
+    background-color: white;
+    border: darkgray 2px groove;
+    overflow: auto;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
 }

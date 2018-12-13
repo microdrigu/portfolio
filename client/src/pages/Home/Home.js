@@ -7,13 +7,15 @@ class Home extends Component {
   
   render() {
     return (
-      <div className="container">
-        <Helmet bodyAttributes={{ style: 'background-color : #FFFFFF' }} />
+      <div className="container body">
         <div className="row">
           <img src={Me} alt="me *smile*"></img>
         </div>
         <div className="row">
-          <p>where will this be and will the background be transparent????</p>
+          <div className="col-sm">
+            <p>where will this be and will the background be white????</p>
+          </div>
+          
         </div>
         
       </div>
