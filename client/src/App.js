@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
-import notFound from "./pages/404/";
+import notFound from "./pages/404";
 import Background from "./imgs/cool.png";
 // const Home = () => <h2>Home</h2>;
 // const About = () => <h1>HEY BB IS ME</h1>;
@@ -43,18 +43,18 @@ class App extends Component {
               <h4 class="text-white">Various links here *smile*</h4>
               <span class="text-muted">Toggleable via the navbar brand.</span>
               <p><Link to="/">Home</Link></p>
-              <p><Link to="/portfolio/">Portfolio</Link></p>
-              <p><Link to="/poop/">Poop</Link></p>
+              <p><Link to="/portfolio">Portfolio</Link></p>
+              <p><Link to="/poop">Poop</Link></p>
             </div>
           </div>
 
           
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/portfolio/" component={Portfolio} />
-            <Route path="/poop/" component={Poop} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/poop" component={Poop} />
+            {/* Heroku has their own 404 page, but here's one anyway */}
             <Route component={notFound} />
-            
           </Switch>
         </div>
       </Router>
