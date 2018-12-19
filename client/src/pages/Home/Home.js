@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Helmet } from "react-helmet";
-import Me from "./../../imgs/me.png"
-import "./Home.css"
+import Me from "./../../imgs/me.png";
+import "./Home.css";
 
 class Home extends Component {
   
@@ -13,7 +12,7 @@ class Home extends Component {
         </div>
         <div className="row">
           <div className="col-sm">
-            <p>where will this be and will the background be white????</p>
+            <p>This is me, am web dev lel</p>
           </div>
           
         </div>
