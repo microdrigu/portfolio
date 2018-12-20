@@ -34,3 +34,12 @@
     bottom: 0;
     width: 100%;
 }
+
+.jumbo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lead {
+    margin-bottom: 0px;
+}
