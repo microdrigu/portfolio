@@ -6,8 +6,12 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import notFound from "./pages/404";
 import Background from "./imgs/cool.png";
-// const Home = () => <h2>Home</h2>;
-// const About = () => <h1>HEY BB IS ME</h1>;
+import Footer from "./components/Footer"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+library.add(faBars);
+
 const Poop = () => <div className="body"><h4>POOPERS</h4></div>;
 
 class App extends Component {
@@ -25,23 +29,23 @@ class App extends Component {
         <div className="container-fluid">
           
           <nav className="d-flex sticky-top justify-content-between navbar">
-            <div className="navbar-brand text-white">Michael Rodriguez</div>
+            <div className="navbar-brand"><Link className="link" style={{ textDecoration: 'none' }} to="/">Michael Rodriguez</Link></div>
             
             {/* <div className="nav-item">
               <h2 id="name"></h2>
             </div> */}
             
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+              <FontAwesomeIcon id="bars" icon="bars" />
             </button>
             
           </nav>
 
           <div className="collapse makeGrey" id="navbarToggleExternalContent">
             <div className="justify-content-end p-3">
-              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link to="/">Home</Link></p>
-              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link to="/portfolio">Portfolio</Link></p>
-              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link to="/poop">Poop</Link></p>
+              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link className="link" style={{ textDecoration: 'none',  }} to="/">About Me</Link></p>
+              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link className="link" style={{ textDecoration: 'none' }} to="/portfolio">Portfolio</Link></p>
+              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link className="link" style={{ textDecoration: 'none' }} to="/poop">Poop</Link></p>
             </div>
           </div>
 
@@ -55,6 +59,7 @@ class App extends Component {
           </Switch>
         </div>
       </Router>
+      <Footer />
       </div>
     );
   }

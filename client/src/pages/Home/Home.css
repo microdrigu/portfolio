@@ -16,12 +16,21 @@
     margin-right: auto;
     width: 50%;
     height: auto; */
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 275px;
+    max-height: 275px;
 }
 
 .icon {
     border-radius:50%;
     max-width: 125px;
     max-height: 125px;
+}
+
+.footbody {
+    justify-content: center;
+    background-color: #000000;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

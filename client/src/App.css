@@ -36,3 +36,14 @@
 .makeGrey {
   background-color: #212121;
 }
+
+#bars {
+  color: whitesmoke;
+}
+
+.link:hover {
+  color: #007bff;
+}
+.link {
+  color: whitesmoke;
+}

@@ -12,7 +12,7 @@ class Home extends Component {
         <div className="row">
           <div className="col-md">
             <p></p>
-            <img id="me" src={Me} alt="me *mdile*" />
+            <img id="me" src={Me} alt="me *smile*" />
           </div>
         </div>
         <div className="row">
@@ -23,10 +23,10 @@ class Home extends Component {
         </div>
         <div className="row justify-content-center">
           <div className="col-xs">
-            <a href="https://github.com/microdrigu"><img class="icon" src={Github} /></a>
+            <a href="https://github.com/microdrigu"><img className="icon" src={Github} alt="github" /></a>
           </div>
           <div className="col-xs">
-            <a href="https://linkedin.com/in/microdrigu/"><img class="icon" src={Linkedin} /></a>
+            <a href="https://linkedin.com/in/microdrigu/"><img className="icon" src={Linkedin} alt="linkedin" /></a>
           </div>
         </div>
         
