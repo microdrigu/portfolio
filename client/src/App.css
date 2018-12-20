@@ -17,3 +17,22 @@
 .App {
   text-align: center;
 }
+
+#navbarToggleExternalContent {
+  text-align: right;
+}
+
+/* fix for chrome browsers */
+.noWeb {
+  -webkit-appearance: none !important;
+}
+
+
+/* trying to make a dark theme */
+.navbar {
+  background-color: #000000;
+}
+
+.makeGrey {
+  background-color: #212121;
+}

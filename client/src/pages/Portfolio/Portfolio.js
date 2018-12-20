@@ -8,7 +8,7 @@ class Portfolio extends Component {
         <div className="container body">
           <div className="row">
             <div className="col-sm">
-              <p>This is what little I have worked on *smile*</p>
+              <p>This is what little I have worked on *smile* ":)"</p>
             </div>
             
           </div>

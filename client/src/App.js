@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import notFound from "./pages/404";
@@ -17,34 +17,31 @@ class App extends Component {
         style = {
           { 
             backgroundImage: 'url(' + Background + ')', 
-            backgroundSize: 'cover', 
             backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
+            backgroundRepeat: 'repeat-y'
           }
         }>
       <Router>
-        <div className="container-fluid pos-f-t">
+        <div className="container-fluid">
           
-          <nav className="d-flex sticky-top justify-content-between navbar navbar-dark bg-dark">
-            <div className="navbar-brand">Logo here</div>
+          <nav className="d-flex sticky-top justify-content-between navbar">
+            <div className="navbar-brand text-white">Michael Rodriguez</div>
             
-            <div className="nav-item">
-              <h2 className="nav-link" id="name">Michael Rodriguez</h2>
-            </div>
+            {/* <div className="nav-item">
+              <h2 id="name"></h2>
+            </div> */}
             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
             
           </nav>
 
-          <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-              <h4 class="text-white">Various links here *smile*</h4>
-              <span class="text-muted">Toggleable via the navbar brand.</span>
-              <p><Link to="/">Home</Link></p>
-              <p><Link to="/portfolio">Portfolio</Link></p>
-              <p><Link to="/poop">Poop</Link></p>
+          <div className="collapse makeGrey" id="navbarToggleExternalContent">
+            <div className="justify-content-end p-3">
+              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link to="/">Home</Link></p>
+              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link to="/portfolio">Portfolio</Link></p>
+              <p className="navbar-toggler noWeb" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><Link to="/poop">Poop</Link></p>
             </div>
           </div>
 
@@ -64,18 +61,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-{/* <div id="navbar NavDropdown">
-              <div className="navbar-nav">
-                
-                <div className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span className="navbar-toggler-icon"></span>
-                  </a>
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    
-                  </div>
-                </div>
-              </div>
-            </div> */}

@@ -1,18 +1,27 @@
 .body {
     justify-content: center;
-    background-color: white;
-    border: darkgray 2px groove;
+    background-color: #303030;
+    /* border: darkgray 2px groove; */
     overflow: auto;
     text-align: center;
+    color: white;
+    font-size: 20px;
 }
 
-img {
+
+#me {
     border-radius: 50%;
-    display: block;
+    /* display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: auto;
+    height: auto; */
     max-width: 300px;
     max-height: 300px;
+}
+
+.icon {
+    border-radius:50%;
+    max-width: 125px;
+    max-height: 125px;
 }
