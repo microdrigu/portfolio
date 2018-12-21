@@ -43,3 +43,9 @@
 .lead {
     margin-bottom: 0px;
 }
+
+.port {
+    max-width: 100%;
+    height:auto;
+    margin-bottom: 15px;
+}
