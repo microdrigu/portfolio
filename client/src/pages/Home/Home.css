@@ -36,7 +36,7 @@
 }
 
 .jumbo {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
 }
 
@@ -48,4 +48,12 @@
     max-width: 100%;
     height:auto;
     margin-bottom: 15px;
+}
+
+.forehead {
+    margin-bottom: 25px;
+}
+
+.linkBot {
+    margin-bottom: 20px;
 }
